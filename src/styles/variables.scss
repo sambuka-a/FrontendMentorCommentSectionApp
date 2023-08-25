@@ -1,0 +1,55 @@
+//Colors
+//Primary
+
+$moderateBlue: hsl(238, 40%, 52%);
+$softRed: hsl(358, 79%, 66%);
+$lightGrayishBlue: hsl(239, 57%, 85%);
+$paleRed: hsl(357, 100%, 86%);
+
+//Neutral
+$darkBlue: hsl(212, 24%, 26%);
+$grayishBlue: hsl(211, 10%, 45%);
+$lightGray: hsl(223, 19%, 93%);
+$veryLightGray: hsl(228, 33%, 97%);
+$white: hsl(0, 0%, 100%);
+
+//Typography
+//Font
+
+//colors neutral
+$darkText: hsl(229, 25%, 31%);
+$scoreText: hsl(229, 64%, 46%);
+$headerOutline: hsl(217, 16%, 45%);
+$colorLight: hsl(220, 18%, 93%);
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+$jozefinFont: 'Rubik', sans-serif;
+
+//font weight
+$fw-light: 400;
+$fw-regular: 500;
+$fw-bold: 700;
+
+//font sizes
+$fs-xs: 10px;
+$fs-sm: 12px;
+$fs-reg: 14px;
+$fs-sb: 16px; 
+
+//breakpoints
+$sm: 520px;
+$lg: 1024px;
+
+@mixin breakpoint($point) {
+    @if $point == sm {
+        @media(min-width: $sm) {
+            @content
+        }
+    }
+    @if $point == lg {
+        @media(min-width: $lg) {
+            @content
+        }
+    }
+}

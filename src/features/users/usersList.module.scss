@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.userList {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+
+  label {
+    font-weight: $fw-regular;
+    margin-right: 8px;
+  }
+
+  select {
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: $moderateBlue;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+
+    &:hover {
+      background-color: $lightGrayishBlue;
+    }
+  }
+
+
+}

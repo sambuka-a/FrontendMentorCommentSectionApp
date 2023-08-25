@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.commentBody {
+  display: flex;
+  max-width: 800px;
+  flex-direction: column;
+  margin: 15px;
+  font-size: $fs-reg;
+  color: $grayishBlue;
+
+  .commentFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  textarea {
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+  }
+
+  button {
+    cursor: pointer;
+    margin-top: 10px;
+    width: 90px;
+    align-self: flex-end;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: $moderateBlue;
+    color: $white;
+    font-size: $fs-sb;
+    font-weight: $fw-regular;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $lightGrayishBlue;
+    }
+  }
+}

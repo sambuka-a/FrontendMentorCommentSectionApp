@@ -1,0 +1,25 @@
+@import '../styles/variables.scss';
+
+.postAuthor {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 30px;
+  }
+
+  span {
+    font-weight: $fw-regular;
+    font-size: $fs-reg;
+    margin-left: 4px;
+  }
+  .activeUserBadge {
+    font-size: $fs-sm;
+    text-align: center;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: $moderateBlue;
+    margin: 0 5px;
+    color: $white;
+  }
+}

@@ -1,0 +1,81 @@
+@import '../../styles/variables.scss';
+
+.postContainer {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 100%;
+
+  .comment {
+    margin: 10px 15px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+
+    .commentInfo {
+      width: 100%;
+    }
+  
+      @include breakpoint(sm) {
+        flex-direction: row;
+        padding: 20px 10px;
+      }
+  
+      .reaction {
+        display: none;
+  
+        @include breakpoint(sm) {
+          display: flex;
+        }
+      }
+  
+      .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+  
+        .controls {
+          display: none;
+  
+          @include breakpoint(sm) {
+            display: flex;
+            align-self: center;
+          }
+        }
+      }
+  
+      .commentHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+  
+    .commentBody {
+      margin: 15px 10px;
+      font-size: $fs-sb;
+      color: $grayishBlue;
+    }
+  
+    .postFooter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      @include breakpoint(sm) {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.replyContainer {
+  display: flex;
+  margin-left: 15px;
+  border-left: 2px solid $lightGray;
+}
